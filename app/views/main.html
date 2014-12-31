@@ -1,0 +1,77 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+<style>
+  /* manually position the dropdown below the trigger */
+  core-dropdown {
+    position: absolute;
+    top: 38px;
+    left: 0;
+  }
+
+  .semBarra > *{
+    overflow: hidden;
+
+  }
+</style>
+
+<div class="row marketing">
+  <paper-shadow z="1">
+    <core-toolbar> 
+      <paper-menu-button>
+          <core-icon-button icon="menu"></core-icon-button>
+          <paper-dropdown class="dropdown" class="semBarra" style="float: left; position: absolute; z-index: 9999;">
+              <core-menu class="menu">
+                  <paper-item>Share</paper-item>
+                  <paper-item>Settings</paper-item>
+                  <paper-item>Help</paper-item>
+              </core-menu>
+          </paper-dropdown>
+        </paper-menu-button>
+      </core-icon-button>
+      <div><h4>Material Design</h4></div>
+    </core-toolbar>
+    
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p><paper-slider min="10" max="200" value="110"></paper-slider></p>
+        <p><paper-progress indeterminate></paper-progress></p>
+        <p><paper-toggle-button label="I/O"></paper-toggle-button></p>
+        <p><paper-checkbox label="Alguma opção"></paper-checkbox></p>
+        <p><paper-radio-group selected="small">
+          <paper-radio-button name="small" label="Small"></paper-radio-button>
+          <paper-radio-button name="medium" label="Medium"></paper-radio-button>
+          <paper-radio-button name="large" label="Large"></paper-radio-button>
+        </paper-radio-group></p>
+        <p><paper-input floatingLabel label="Nome"></paper-input></p>
+
+        <p><paper-input-decorator floatingLabel label="Endereço">
+            <textarea></textarea>
+        </paper-input-decorator></p>
+
+        <paper-button class="colored">
+          Config 
+          <core-icon icon="settings"></core-icon> 
+        </paper-button>
+        <p>
+            <paper-fab icon="add"></paper-fab>
+            <paper-fab mini icon="favorite"></paper-fab>
+            <paper-fab icon="star"></paper-fab>
+        </p>
+        <style shim-shadowdom>
+          paper-spinner.blue::shadow .circle {
+            border-color: #4285f4;
+          }
+        </style>
+        <paper-spinner class="blue" active></paper-spinner>
+      </div>
+    </div>
+  </paper-shadow>
+
+</div>
